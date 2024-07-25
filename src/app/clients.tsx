@@ -4,12 +4,12 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const CLIENTS = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
-  "amazon",
-  "netflix",
+  "vsq",
+  "slush",
+  "nyu",
+  "liwa",
+  "uwc",
+
 ];
 
 export function Clients() {
@@ -27,7 +27,7 @@ export function Clients() {
               width={768}
               height={768}
               className="w-40"
-              src={`/logos/logo-${logo}.svg`}
+              src={`/image/${logo}.png`}
             />
           ))}
         </div>

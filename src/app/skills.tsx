@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import {
   RectangleGroupIcon,
@@ -15,48 +15,16 @@ import {
 import { SkillCard } from "@/components";
 
 const SKILLS = [
-  {
-    icon: CodeBracketIcon,
-    title: "Headstarter AI",
-    children:
-      "Currently building 5 AI apps with 2-3 other fellows",
-    date: "Jul 2024 - Present",
-  },
-  {
-    icon: ChartPieIcon,
-    title: "VentureSouq",
-    children:
-      "Building beautiful interfaces for investment optimization",
-    date: "Jun 2024 - Aug 2024",
-  },
-  {
-    icon: PresentationChartLineIcon,
-    title: "Liwa Capital",
-    children:
-      "Built automated software for lead generation",
-    date: "Jun 2023 - Jan 2024",
-  },
-  {
-    icon: HashtagIcon,
-    title: " Slush'D",
-    children:
-      "Bringing the most founder-focused tech event on earth to the UAE",
-    date: "Feb 2023 - Present",
-  },
-  {
-    icon: EyeIcon,
-    title: "Violet Ventures",
-    children:
-      "Inspiring 1250+ students in MENA to become entrepreneurs",
-    date: "Feb 2023 - May 2024",
-  },
-  {
-    icon: DocumentTextIcon,
-    title: "Extra",
-    children:
-      "We will see about this one",
-    date: "Jun 2024 - Aug 2024",
-  },
+  'css3',
+  'django',
+  'html5',
+  'javascript',
+  'nextjs',
+  'nodejs',
+  'postgresql',
+  'python',
+  'react',
+  'tailwindcss',
 ];
 
 export function Skills() {
@@ -64,15 +32,39 @@ export function Skills() {
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" variant="h3" className="mb-2 font-bold uppercase">
-          My experiences
+          My skills
         </Typography>
 
 
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 md:place-items-center lg:grid-cols-3 lg:place-items-center">
-        {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
-        ))}
+      <div
+        className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+          {SKILLS.map((logo, idx) => (
+            <li>
+              <Image
+                priority
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${logo}/${logo}${logo === 'django' ? '-plain' : '-original'}.svg`}
+                height={64}
+                width={64}
+                alt="Follow us on Twitter"
+              />
+            </li>
+          ))}
+        </ul>
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+          {SKILLS.map((logo, idx) => (
+            <li>
+              <Image
+                priority
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${logo}/${logo}${logo === 'django' ? '-plain' : '-original'}.svg`}
+                height={64}
+                width={64}
+                alt="Follow us on Twitter"
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

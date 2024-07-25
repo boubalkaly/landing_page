@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -19,10 +20,12 @@ const NAV_MENU = [
   {
     name: "Home",
     icon: RectangleStackIcon,
+
   },
   {
     name: "Projects",
     icon: UserCircleIcon,
+    href: "/projects"
   },
   {
     name: "About",
@@ -101,10 +104,12 @@ export function Navbar() {
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map(({ name, icon: Icon }) => (
-              <NavItem key={name}>
+
+              <NavItem>
                 <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
+
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">

@@ -5,24 +5,28 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
+    img: "/image/retina.jpg",
     title: "Retina",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    desc: "App an to make college readings easier for dyslexics",
+    href: "https://github.com/boubalkaly/retina"
   },
   {
-    img: "/image/blog2.svg",
-    title: "Stock Predictor",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
+    img: "/image/stock.jpg",
+    title: "Halal Stock Predictor",
+    desc: "Determining future closing prices for Shariah-compliant stocks",
+    href: "https://github.com/boubalkaly/halal_stock_predictor"
   },
   {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    img: "/image/olympics.jpg",
+    title: "Olympics Winner Predictor",
+    desc: "Know in advance who will win the 2024 olympics",
+    href: "https://olympics-predictor.streamlit.app/"
   },
   {
-    img: "/image/blog4.svg",
-    title: "E-commerce development",
-    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
+    img: "/image/library.jpg",
+    title: "Library Management System",
+    desc: "Create, store and search your favorite books in sub-linear time complexity",
+    href: "https://github.com/boubalkaly/library_system"
   },
 ];
 
@@ -41,7 +45,7 @@ export function Projects() {
           <span className="font-bold"> Django</span> in the Backend.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20 p-30">
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}
