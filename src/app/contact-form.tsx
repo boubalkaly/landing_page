@@ -21,9 +21,10 @@ export function ContactForm() {
   return (
     <section className="px-8 pt-16" id="contact">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h3" color="blue-gray" className="mb-4 uppercase">
+        {/* <Typography variant="h3" color="blue-gray" className="mb-4 uppercase">
           Contact Me
-        </Typography>
+        </Typography> */}
+        <h3 className="mb-4 uppercase text-gray-900">Contact Me</h3>
 
       </div>
       <div>
