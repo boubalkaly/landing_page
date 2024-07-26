@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/landing_page",
+  output: "export",
   images: {
     remotePatterns: [
       {
