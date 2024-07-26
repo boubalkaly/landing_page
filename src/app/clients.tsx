@@ -17,7 +17,7 @@ export function Clients() {
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
         <Typography variant="h3" color="blue-gray" className="mb-20 uppercase">
-          Where I've worked at
+          Where I&apos;ve worked at
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
