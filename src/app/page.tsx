@@ -16,7 +16,6 @@ export default function Portfolio() {
     <>
       <Navbar />
       <Hero />
-      <Clients />
       <Skills />
       <Projects />
       <Resume />

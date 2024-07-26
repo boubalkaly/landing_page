@@ -32,7 +32,7 @@ export function Skills() {
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" variant="h3" className="mb-2 font-bold uppercase">
-          My skills
+          My favorite technologies
         </Typography>
 
 

@@ -32,20 +32,14 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="py-28 px-8">
+    <section className="py-28 px-10" id="projects">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h3" color="blue-gray" className="mb-4 uppercase">
-          My Projects
+          Things I built
         </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-        >
-          My main tech stack include <span className="font-bold">Next.JS/React.JS</span>, <span className="font-bold">Tailwind CSS</span> on the frontend and
-          <span className="font-bold"> Django</span> in the Backend.
-        </Typography>
+
       </div>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20 p-30">
+      <div className="grid grid-cols-1 gap-y-20 md:flex md:justify-center md:gap-10 md:flex-wrap">
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}

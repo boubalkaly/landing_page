@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import {
   Typography,
@@ -11,20 +12,18 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 
 export function ContactForm() {
   return (
-    <section className="px-8 py-16">
+    <section className="px-8 pt-16" id="contact">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h3" color="blue-gray" className="mb-4 uppercase">
           Contact Me
         </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full lg:w-5/12 !text-gray-500"
-        >
-          Reach out if you ever want to talk anything tech and/or startups!
-        </Typography>
+
       </div>
       <div>
         <Card shadow={true} className="container mx-auto border border-gray/50">
@@ -33,6 +32,7 @@ export function ContactForm() {
               <Typography variant="h4" color="white" className="mb-28">
                 Contact Information
               </Typography>
+
 
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />
@@ -47,16 +47,13 @@ export function ContactForm() {
                 </Typography>
               </div>
 
-              <div className="flex items-center gap-5">
-                <IconButton variant="text" color="white">
-                  <i className="fa-brands fa-facebook text-lg" />
-                </IconButton>
-                <IconButton variant="text" color="white">
-                  <i className="fa-brands fa-instagram text-lg" />
-                </IconButton>
-                <IconButton variant="text" color="white">
-                  <i className="fa-brands fa-github text-lg" />
-                </IconButton>
+              <div className="flex items-center gap-5 mt-6">
+                <Link href="/linkedin.com"><FaLinkedin className="text-white h-6 w-6" /></Link>
+                <Link href="/facebook.com"><FaFacebook className="text-white h-6 w-6" /></Link>
+                <Link href="/instagram.com"><FaInstagram className="text-white h-6 w-6" /></Link>
+
+
+
               </div>
             </div>
             <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
