@@ -1,5 +1,5 @@
 "use client";
-
+import type { ButtonProps } from "@material-tailwind/react";
 import Image from "next/image";
 import { Input, Button, Typography } from "@material-tailwind/react";
 import Link from "next/link";

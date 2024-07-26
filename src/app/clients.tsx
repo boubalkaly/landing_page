@@ -16,9 +16,10 @@ export function Clients() {
   return (
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
-        <Typography variant="h3" color="blue-gray" className="mb-20 uppercase">
+        {/* <Typography variant="h3" color="blue-gray" className="mb-20 uppercase" as="h3">
           Where I&apos;ve worked at
-        </Typography>
+        </Typography> */}
+        <h3 className="text-gray-900 mb-20 uppercase">Where I&apos;ve worked at</h3>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
             <Image
